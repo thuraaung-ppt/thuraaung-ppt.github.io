@@ -8,7 +8,7 @@
            if ('serviceWorker' in navigator) 
                       {
                       window.addEventListener('load', function() {
-                        navigator.serviceWorker.register('/sw.js')
+                        navigator.serviceWorker.register("{{ url_for('static',filename='sw.js') }}") 
                         .then(function() { console.log("Service Worker Registered"); });
                       }
                       );
@@ -58,7 +58,7 @@
                             
    <div class="image" style="background-image: url(&quot;{{ url_for('static',filename='mayeedwingdg.jpg') }} &quot;); background-position: center center;">
     
-    <img src="{{ url_for('static',filename='dd.jpg') }}" alt="" data-position="center center" 
+    <img src="{{ url_for('static',filename='myprofile.jpg') }}" alt="" data-position="center center" 
                                 
    style="display: none;">
                             
@@ -68,7 +68,7 @@
                                 
         <div class="inner">
                                     
-        <header><h1>Sandar Win</h1>
+        <header><h1>Thura Aung</h1>
                                         
          <p>I am a student  from CU MDY learning cloud native development <br>
          	My GitHub page at <a href="https://github.com/thuraaung-ppt/">GitHub</a></p>
@@ -157,7 +157,7 @@
         <article id="about" class="panel secondary inactive" style="display: none;">
                             
         <div class="image" style="background-image: url(&quot;{{ url_for('static',filename='mayeedwingdg3.jpg') }}&quot;); background-position: center center;">
-        <img src="{{ url_for('static',filename='dd.jpg') }}" alt="" data-position="center center" style="display: none;">
+        <img src="{{ url_for('static',filename='myprofile.jpg') }}" alt="" data-position="center center" style="display: none;">
          </div>
     
          <div class="content">
@@ -199,9 +199,9 @@
      
       <article id="contact" class="panel secondary inactive" style="display: none;">
                 
-            <div class="image" style="background-image: url(&quot;{{ url_for('static',filename='dd.jpg') }}&quot;); background-position: center bottom;">
+            <div class="image" style="background-image: url(&quot;{{ url_for('static',filename='myprofile.jpg') }}&quot;); background-position: center bottom;">
                 
-            <img src="{{ url_for('static',filename='dd.jpg') }}" alt="" data-position="bottom center" style="display: none;">
+            <img src="{{ url_for('static',filename='myprofile.jpg') }}" alt="" data-position="bottom center" style="display: none;">
         
             </div><div class="content">
                 
@@ -262,7 +262,7 @@
        <footer id="footer" class="">
                 
                 
-         <p class="copyright">© Sandar Win</p>
+         <p class="copyright">© Thura Aung</p>
             
             
             </footer>
